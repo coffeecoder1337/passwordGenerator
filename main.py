@@ -33,3 +33,9 @@ class PasswordGenerator:
 
     def getPassword(self, start, stop, step, passwordText):
         return passwordText[start:stop:step]
+
+
+
+def writeTextToFile(filename, text):
+    with open(filename, 'w') as file:
+        file.write(text)
