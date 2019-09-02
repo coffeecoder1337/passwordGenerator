@@ -41,7 +41,6 @@ def writeTextToFile(filename, text):
         file.write(text)
 
 
-pg = PasswordGenerator()
-d = pg.createDictionary(upper=True, digital=True)
-pt = pg.createPassword(5000, d)
-writeTextToFile('password.txt', pt)
+def readTextFromFile(filename):
+    with open(filename, 'r') as file:
+        return file.read()
