@@ -39,3 +39,9 @@ class PasswordGenerator:
 def writeTextToFile(filename, text):
     with open(filename, 'w') as file:
         file.write(text)
+
+
+pg = PasswordGenerator()
+d = pg.createDictionary(upper=True, digital=True)
+pt = pg.createPassword(5000, d)
+writeTextToFile('password.txt', pt)
