@@ -31,7 +31,5 @@ class PasswordGenerator:
         return password
     
 
-    def getPassword(self, start, stop, step, passwordText):
-        password = passwordText[start:stop:step] 
-        return password
+
         
