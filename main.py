@@ -26,7 +26,7 @@ class PasswordGenerator:
             :param dictionary: словарь для генерации пароля
         """
         password = ""
-        for l in length:
+        for l in range(length):
             password += random.choice(dictionary)
         return password
     
