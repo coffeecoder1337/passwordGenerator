@@ -3,7 +3,7 @@
 import pg
 
 pgen = pg.PasswordGenerator()
-pg.writeTextToFile('password.txt', pgen.createPassword(5000, pgen.createDictionary(upper=True, digital=True)))
+pg.writeTextToFile('password.txt', pgen.createPassword(5000, pgen.createDictionary(lower=True, upper=True, digital=True)))
 
 // bsF806u2rGXJHth7T56TRgOfDeEmJioUOnstFFYkOzS5c17RPktJc8LAXviinJ
 
